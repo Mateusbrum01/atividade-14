@@ -56,7 +56,6 @@
                             <p><strong>Setor:</strong> <?php echo htmlspecialchars($task['sector']); ?></p>
                             <p><strong>Usuário:</strong> <?php echo htmlspecialchars($task['user_name']); ?></p>
                             <p><strong>Prioridade:</strong> <?php echo ucfirst($task['priority']); ?></p>
-                            <p><strong>Data de Cadastro:</strong> <?php echo $task['created_at']; ?></p>
                             <div class="task-actions">
                                 <form action="atualizar_tarefa.php" method="POST" style="display: inline;">
                                     <input type="hidden" name="task_id" value="<?php echo $task['id']; ?>">
